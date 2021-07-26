@@ -4,8 +4,9 @@
   "description": "backend application for app to schedule fitness appointments",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "server": "node index.js"
+    "server": "node index.js",
+    "heroku-prebuild": "cd FitnessClubBe && npm install && npm run build && cd .. && cd FitnessClubBe && npm install",
+    "start": "cd FitnessClubBe && npm start"
   },
   "author": "",
   "license": "ISC",
